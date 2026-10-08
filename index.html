@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夜霧</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="profile">
+
+        <img src="images/profile.jpg"
+             alt="夜霧のプロフィール画像"
+             class="profile-icon">
+
+        <h1>夜霧</h1>
+
+        <p>Programmer / Illustrator / Game / Guitar / etc.</p>
+
+         <p>Code / Draw / Play / Create.</p>
+
+
+    </div>
+
+<div class="menu">
+
+  <button type="button"
+        class="menu-button"
+        onclick="showGallery('original')">
+    <img src="images/original.jpg"
+         alt="一次創作"
+         class="menu-image">
+</button>
+
+<button type="button"
+        class="menu-button"
+        onclick="showGallery('fanart')">
+    <img src="images/fanart.jpg"
+         alt="版権イラスト"
+         class="menu-image">
+</button>
+
+</div>
+
+</div> <!-- menuの終わり -->
+
+<p class="gallery-guide">
+    Click to open / Click again to close
+</p>
+
+<div id="gallery-description" class="gallery-description"
+     hidden>
+
+    <div id="original-description" hidden>
+        <h2>ORIGINAL</h2>
+        <p>オリジナルキャラクターや創作イラストをまとめています。</p>
+    </div>
+
+    <div id="fanart-description" hidden>
+        <h2>FAN ART</h2>
+        <p>好きな作品のファンアートをまとめています。</p>
+    </div>
+
+</div>
+
+<div id="gallery" class="gallery"></div>
+
+<!-- イラストを表示する場所 -->
+<div id="gallery" class="gallery"></div>
+
+
+<section class="interests">
+    <h2>LIKE / INTERESTS</h2>
+
+    <div class="interest-list">
+
+        <div class="interest-item">
+            <div class="interest-icon">🎮</div>
+            <h3>GAME</h3>
+            <p>Persona</p>
+            <p>Rhythm Games</p>
+            <p>Steam Games</p>
+        </div>
+
+        <div class="interest-item">
+            <div class="interest-icon">🔭</div>
+            <h3>INTEREST</h3>
+            <p>Astronomy</p>
+            <p>Geography</p>
+            <p>Geology</p>
+        </div>
+
+        <div class="interest-item">
+            <div class="interest-icon">🎸</div>
+            <h3>MUSIC</h3>
+            <p>Guitar</p>
+            <p>Hardcore</p>
+            <p>Jazz</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="multiplayer">
+    <h2>MULTIPLAYER</h2>
+
+    <p>Monster Hunter</p>
+    <p>ELDEN RING NIGHTREIGN</p>
+    <p>Genshin Impact</p>
+
+    <p>PS5 / Steam / Nintendo Switch</p>
+
+    <p>IDs / Friend codes available on request.</p>
+</section>
+
+<section class="Fields">
+    <h2>SKILLS / KNOWLEDGE</h2>
+
+    <div class="Fields-list">
+
+        <div class="Fields-item">
+            <div class="Fields-icon">🐦</div>
+            <h3>BIRD</h3>
+            <p>Living with a Linnie.</p>
+            <p>Bird Life Advisor — Grade 3</p>
+            <p>Studying birds & aviculture.</p>
+        </div>
+
+        <div class="Fields-item">
+            <div class="Fields-icon">💻</div>
+            <h3>CODE</h3>
+            <p>.NET</p>
+            <p>SQL</p>
+            <p>Python</p>
+            <p>Learning what I need,when I need it.</p>
+        </div>
+    </div>
+</section>
+
+
+<script src="gallery.js"></script>
+
+</body>
+
+</html>
