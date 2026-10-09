@@ -58,3 +58,10 @@ function showGallery(category) {
         gallery.appendChild(img);
     }
 }
+
+const profileToggle = document.getElementById("profile-toggle");
+const profileDetails = document.getElementById("profile-details");
+
+profileToggle.addEventListener("click", () => {
+    profileDetails.hidden = !profileDetails.hidden;
+});
