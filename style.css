@@ -182,3 +182,16 @@ body {
     font: inherit;
     cursor: pointer;
 }
+
+.profile-details {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    overflow: hidden;
+    transition: grid-template-rows 0.4s ease, opacity 0.4s ease;
+}
+
+.profile-details.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
