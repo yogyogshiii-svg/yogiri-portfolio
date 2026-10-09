@@ -199,3 +199,12 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+.fields-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
