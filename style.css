@@ -232,3 +232,30 @@ body {
 .detail-modal::backdrop {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* モーダル内の配置基準 */
+.modal-content {
+    position: relative;
+}
+
+/* 閉じるボタン */
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background: transparent;
+    border: none;
+    color: #ffffff;
+
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+
+    padding: 4px 8px;
+}
+
+/* マウスを乗せたとき */
+.modal-close:hover {
+    color: #aaaaaa;
+}
