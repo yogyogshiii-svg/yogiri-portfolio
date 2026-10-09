@@ -164,24 +164,85 @@
     </div>
 </section>
 
-    <dialog id="code-modal" class="detail-modal">
-        <div class="modal-content">
-            <button type="button" class="modal-close" id="code-close"
-                    aria-label="閉じる">
-                ×
-            </button>
+<dialog id="code-modal" class="detail-modal">
+    <div class="modal-content">
 
-            <h2>CODE</h2>
+        <button type="button" class="modal-close" id="code-close"
+                aria-label="閉じる">
+            ×
+        </button>
 
+        <h2>CODE</h2>
+
+        <p>経験・制作物・学習内容について</p>
+
+        <details name="code-section">
+            <summary>Development / 開発経験</summary>
             <p>
-                .NET / SQL / Python
+                学生時代はC言語を中心に学習。
+                実務では.NET・VBAによる開発や、
+                PostgreSQLを使用したデータベース操作を経験しました。
+            </p>
+        </details>
+
+        <details name="code-section">
+            <summary>Personal Tools / 自作ツール</summary>
+
+            <h4>Python：PDFデータ抽出ツール</h4>
+            <p>
+                PDF内の文字情報を抽出し、
+                Excelへ出力するツールを制作しました。
             </p>
 
+            <h4>PowerShell：週報自動作成ツール</h4>
             <p>
-                実務での開発経験や、これまでに学んだ技術について。
+                週初めのPC起動時に週報のひな形を
+                自動生成するツールを制作しました。
             </p>
-        </div>
-    </dialog>
+
+            <h4>Python：おしゃべりくん</h4>
+            <p>
+                独学で制作した対話型プログラム。
+                会話内容の記録や感情判定、
+                応答処理などを実装しました。
+            </p>
+        </details>
+
+        <details name="code-section">
+            <summary>Infrastructure / Network</summary>
+            <p>
+                学生時代にCisco Packet Tracerを使用して
+                ネットワークの基礎を学習しました。
+            </p>
+            <p>
+                IoT関連の検証では、Ubuntu・Docker・Mosquittoを使用し、
+                MQTTのペイロード確認などを経験しました。
+            </p>
+        </details>
+
+        <details name="code-section">
+            <summary>Others / その他</summary>
+            <p>
+                コマンドラインでの操作が好きで、
+                Windowsのコマンドプロンプトなども使用しています。
+            </p>
+            <p>
+                HTML・CSSは学生時代に学習し、
+                現在はJavaScriptとあわせて復習しながら、
+                このサイトを制作しています。
+            </p>
+        </details>
+
+        <details name="code-section">
+            <summary>Learning Style / 学習姿勢</summary>
+            <p>
+                必要な技術をその都度調べて学び、
+                実際に手を動かして習得するスタイルです。
+            </p>
+        </details>
+
+    </div>
+</dialog>
 
 <script src="gallery.js"></script>
 
