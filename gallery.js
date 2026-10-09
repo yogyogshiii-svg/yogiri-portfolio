@@ -65,3 +65,25 @@ const profileDetails = document.getElementById("profile-details");
 profileToggle.addEventListener("click", () => {
     profileDetails.classList.toggle("is-open");
 });
+
+// CODEのモーダルを操作するための要素を取得
+const codeToggle = document.getElementById("code-toggle");
+const codeModal = document.getElementById("code-modal");
+const codeClose = document.getElementById("code-close");
+
+// CODEをクリックしたらモーダルを開く
+codeToggle.addEventListener("click", () => {
+    codeModal.showModal();
+});
+
+// ×ボタンをクリックしたら閉じる
+codeClose.addEventListener("click", () => {
+    codeModal.close();
+});
+
+// モーダルの外側をクリックしたら閉じる
+codeModal.addEventListener("click", (event) => {
+    if (event.target === codeModal) {
+        codeModal.close();
+    }
+});
