@@ -81,9 +81,16 @@ codeClose.addEventListener("click", () => {
     codeModal.close();
 });
 
-// モーダルの外側をクリックしたら閉じる
 codeModal.addEventListener("click", (event) => {
-    if (event.target === codeModal) {
+    const rect = codeModal.getBoundingClientRect();
+
+    const isOutside =
+        event.clientX < rect.left ||
+        event.clientX > rect.right ||
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom;
+
+    if (isOutside) {
         codeModal.close();
     }
 });
