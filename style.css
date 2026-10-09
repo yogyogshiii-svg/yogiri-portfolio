@@ -184,19 +184,18 @@ body {
 }
 
 .profile-details {
-    display: grid;
-    grid-template-rows: 0fr;
+    max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: grid-template-rows 0.4s ease, opacity 0.4s ease;
+    visibility: hidden;
+    transition:
+        max-height 0.4s ease,
+        opacity 0.4s ease,
+        visibility 0.4s ease;
 }
 
 .profile-details.is-open {
-    grid-template-rows: 1fr;
+    max-height: 500px;
     opacity: 1;
-}
-
-.profile-details-inner {
-    min-height: 0;
-    overflow: hidden;
+    visibility: visible;
 }
