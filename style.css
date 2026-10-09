@@ -195,3 +195,8 @@ body {
     grid-template-rows: 1fr;
     opacity: 1;
 }
+
+.profile-details-inner {
+    min-height: 0;
+    overflow: hidden;
+}
