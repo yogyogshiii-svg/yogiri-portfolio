@@ -215,3 +215,20 @@ body {
     overflow-y: auto;
     box-sizing: border-box;
 }
+
+.detail-modal {
+    width: min(90%, 650px);
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+
+    background-color: #151515;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.detail-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
