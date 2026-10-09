@@ -208,3 +208,10 @@ body {
     font: inherit;
     cursor: pointer;
 }
+
+.detail-modal {
+    width: min(90%, 650px);
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
