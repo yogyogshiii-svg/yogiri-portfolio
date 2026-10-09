@@ -255,6 +255,16 @@ body {
     padding: 4px 8px;
 }
 
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.modal-content > p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
 /* マウスを乗せたとき */
 .modal-close:hover {
     color: #aaaaaa;
